@@ -4,7 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Enter the amount of tires for the vehicle you want to create:");
+            string userInput = Console.ReadLine();
+
+            IVehicle instance = VehicleFactory.GetVehicle(userInput);
+    
         }
     }
 }
